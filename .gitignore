@@ -1,0 +1,11 @@
+*
+!.gitignore
+!*.py
+!*.cfg
+!*.txt
+!*.md
+!*.ipynb
+!common/
+!dual/
+!simul/
+!nb_stim/
