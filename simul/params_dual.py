@@ -7,8 +7,9 @@ model = "lif"  # lif, binary, rate
 n_pop = 2
 n_neurons = 4
 K = 2000
-folder = 'christos_off' 
-folder = "christos_off"
+folder = "dual"
+# folder = "christos_off"
+# christos_off
 m0 = 0.001
 nu0 = 0.05
 global T_WINDOW
@@ -32,8 +33,8 @@ else:
 
 global IF_STRUCTURE, IF_SPEC, IF_RING, IF_LOW_RANK
 IF_SPEC = 0
-IF_RING = 1
-IF_LOW_RANK = 0
+IF_RING = 0
+IF_LOW_RANK = 1
 IF_GAUSS = 0
 
 IF_STRUCTURE = IF_SPEC or IF_RING or IF_LOW_RANK or IF_GAUSS
@@ -42,11 +43,11 @@ global SIGMA
 SIGMA = [60, 60, 70, 60]
 
 global RANK, MAP
-RANK = 1
+RANK = 2
 MAP = 0
 
 global KAPPA, KAPPA_1
-KAPPA = 0.25  # 0.250
+KAPPA = 4.5  # 0.250
 KAPPA_1 = KAPPA  # 8 # 12
 
 KAPPA_VAR = 2
@@ -54,8 +55,8 @@ FIX_SEED = 1
 MAP_SEED = 1
 
 global FIX_CON, CON_SEED
-FIX_CON = 0 
-CON_SEED = 3 
+FIX_CON = 0
+CON_SEED = 3
 
 global MEAN_KSI, VAR_KSI
 MEAN_KSI = 0
@@ -73,13 +74,13 @@ TAU_REC = 200
 USE = 0.03
 
 global IF_TRIALS, TRIAL_ID, N_TRIALS
-IF_TRIALS = 0 
-TRIAL_ID = 1 
+IF_TRIALS = 0
+TRIAL_ID = 1
 N_TRIALS = 10
 
 global IF_INI_COND, INI_COND_ID, N_INI
-IF_INI_COND = 0 
-INI_COND_ID = 1 
+IF_INI_COND = 0
+INI_COND_ID = 1
 N_INI = 10
 
 global IF_ADD_VLINES
@@ -95,7 +96,7 @@ IF_DPA = 0
 IF_DUAL = 0
 IF_DRT = 0
 IF_ODR = 0
-IF_CHRISTOS = 1
+IF_CHRISTOS = 0
 
 global SAMPLE, DISTRACTOR
 SAMPLE = 0
@@ -106,14 +107,14 @@ KAPPA_EXT = 3.0
 PHI_EXT = 0.25
 
 global A_CUE, EPS_CUE, A_DIST, EPS_DIST, PHI_CUE, PHI_DIST
-PHI_CUE = 0.250 
-PHI_DIST = 1 - PHI_CUE 
+PHI_CUE = 0.250
+PHI_DIST = 1 - PHI_CUE
 
-A_CUE = 0.250 
-EPS_CUE = 0.250 
+A_CUE = 0.250
+EPS_CUE = 0.250
 
-A_DIST = 0.000 
-EPS_DIST = 0.250 
+A_DIST = 0.000
+EPS_DIST = 0.250
 
 global T_SAMPLE_ON, T_SAMPLE_OFF
 T_SAMPLE_ON = 2
